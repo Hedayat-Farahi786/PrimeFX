@@ -13,10 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
 // =================== preloader js end ================== //
 
 
+// =================== footer year ================== //
+const footerYear = document.getElementById('footerYear');
+footerYear.innerText = new Date().getUTCFullYear();
+
 // =================== light and dark start ================== //
 
 const colorSwitcher = document.getElementById('btnSwitch');
-
 
 switchThemeByUrl();
 updateThemeColor(localStorage.getItem('theme'))
